@@ -1,0 +1,10 @@
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\bin\Debug\TenQuizQuestions.exe.config
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\bin\Debug\TenQuizQuestions.exe
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\bin\Debug\TenQuizQuestions.pdb
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.csproj.AssemblyReference.cache
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.Start_FRM.resources
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.Properties.Resources.resources
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.csproj.GenerateResource.cache
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.csproj.CoreCompileInputs.cache
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.exe
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.pdb
