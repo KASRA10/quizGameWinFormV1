@@ -40,16 +40,16 @@
 			// GameLogo_PIC
 			// 
 			this.GameLogo_PIC.Image = global::TenQuizQuestions.Properties.Resources.icons8_laptop_coding_200px;
-			this.GameLogo_PIC.Location = new System.Drawing.Point(90, 12);
+			this.GameLogo_PIC.Location = new System.Drawing.Point(88, 12);
 			this.GameLogo_PIC.Name = "GameLogo_PIC";
-			this.GameLogo_PIC.Size = new System.Drawing.Size(202, 185);
+			this.GameLogo_PIC.Size = new System.Drawing.Size(198, 168);
 			this.GameLogo_PIC.TabIndex = 0;
 			this.GameLogo_PIC.TabStop = false;
 			// 
 			// Title_LBL
 			// 
 			this.Title_LBL.AutoSize = true;
-			this.Title_LBL.Location = new System.Drawing.Point(96, 210);
+			this.Title_LBL.Location = new System.Drawing.Point(94, 193);
 			this.Title_LBL.Name = "Title_LBL";
 			this.Title_LBL.Size = new System.Drawing.Size(190, 20);
 			this.Title_LBL.TabIndex = 1;
@@ -57,18 +57,22 @@
 			// 
 			// Start_BTN
 			// 
-			this.Start_BTN.Location = new System.Drawing.Point(98, 237);
+			this.Start_BTN.BackColor = System.Drawing.Color.Black;
+			this.Start_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Start_BTN.ForeColor = System.Drawing.Color.White;
+			this.Start_BTN.Location = new System.Drawing.Point(98, 219);
 			this.Start_BTN.Name = "Start_BTN";
 			this.Start_BTN.Size = new System.Drawing.Size(186, 25);
 			this.Start_BTN.TabIndex = 2;
 			this.Start_BTN.Text = "Start Challenge";
-			this.Start_BTN.UseVisualStyleBackColor = true;
+			this.Start_BTN.UseVisualStyleBackColor = false;
+			this.Start_BTN.Click += new System.EventHandler(this.Start_BTN_Click);
 			// 
 			// GitHub_LBLL
 			// 
 			this.GitHub_LBLL.AutoSize = true;
 			this.GitHub_LBLL.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.GitHub_LBLL.Location = new System.Drawing.Point(154, 287);
+			this.GitHub_LBLL.Location = new System.Drawing.Point(160, 252);
 			this.GitHub_LBLL.Name = "GitHub_LBLL";
 			this.GitHub_LBLL.Size = new System.Drawing.Size(56, 20);
 			this.GitHub_LBLL.TabIndex = 3;
@@ -80,7 +84,7 @@
 			// 
 			this.WebSite_LBLL.AutoSize = true;
 			this.WebSite_LBLL.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.WebSite_LBLL.Location = new System.Drawing.Point(154, 307);
+			this.WebSite_LBLL.Location = new System.Drawing.Point(156, 278);
 			this.WebSite_LBLL.Name = "WebSite_LBLL";
 			this.WebSite_LBLL.Size = new System.Drawing.Size(65, 20);
 			this.WebSite_LBLL.TabIndex = 4;
@@ -92,6 +96,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(384, 361);
 			this.Controls.Add(this.WebSite_LBLL);
 			this.Controls.Add(this.GitHub_LBLL);

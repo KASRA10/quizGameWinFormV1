@@ -49,5 +49,12 @@ namespace TenQuizQuestions
 				DialogResult result = MessageBox.Show("Unable to open the link. Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
+
+		private void Start_BTN_Click(object sender, EventArgs e)
+		{
+			Game_FRM form = new Game_FRM();
+			this.Hide();
+			form.Show();
+		}
 	}
 }

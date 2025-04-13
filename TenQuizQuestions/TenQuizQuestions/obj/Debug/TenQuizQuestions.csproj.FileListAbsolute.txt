@@ -8,3 +8,4 @@ E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQui
 E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.csproj.CoreCompileInputs.cache
 E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.exe
 E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.pdb
+E:\WORKSPACE\TenQuizQuestions\TenQuizQuestions\TenQuizQuestions\obj\Debug\TenQuizQuestions.Game_FRM.resources
