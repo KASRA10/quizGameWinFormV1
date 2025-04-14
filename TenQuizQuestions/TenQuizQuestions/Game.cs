@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿// Ignore Spelling: FRM
+
+using System.Windows.Forms;
 using TenQuizQuestions.Models;
 
 namespace TenQuizQuestions
@@ -6,44 +8,62 @@ namespace TenQuizQuestions
 	public partial class Game_FRM : Form
 	{
 		#region PublicItems
-		int RowNumber = 0;
-		int correctAnswers = 0;
-		int incAnswers = 0;
+		public int RowNumber = 0;
+		public int correctAnswers = 0;
+		public int incAnswers = 0;
+		public bool lastCorrectAnswer = false;
+		public bool lastInCorrectAnswer = false;
+		public int backCounter = 0;
 		#endregion
 		public Game_FRM()
 		{
 			InitializeComponent();
+
 			Back_BTN.Enabled = false;
 			Back_BTN.BackColor = System.Drawing.Color.Gray;
-			Questions_LBL.Text = Questions.qustions[RowNumber];
+			Questions_LBL.Text = Questions.questions[RowNumber];
 			True_RBTN.Checked = false;
 			False_RBTN.Checked = false;
 		}
 
 		private void Next_BTN_Click(object sender, System.EventArgs e)
 		{
+			backCounter = 0;
+
 			if (True_RBTN.Checked || False_RBTN.Checked)
 			{
 				bool userAnswer = true ? True_RBTN.Checked : False_RBTN.Checked;
-				bool correctAnswer = Answers.qustions[RowNumber] == "True" ? true : false;
+				bool correctAnswer = Answers.answers[RowNumber] == "True" ? true : false;
 
 				if (correctAnswer)
 				{
 					correctAnswers++;
+					lastCorrectAnswer = true;
+					lastInCorrectAnswer = false;
 					CorrectAnswers_LBL.Text = correctAnswers.ToString();
 				}
 				else
 				{
 					incAnswers++;
+					lastInCorrectAnswer = true;
+					lastCorrectAnswer = false;
 					InCorrectAnswers_LBL.Text = incAnswers.ToString();
 				}
 				RowNumber++;
 
-				Back_BTN.Enabled = Enabled;
-				Back_BTN.BackColor = System.Drawing.Color.Salmon;
+				if (backCounter == 0)
+				{
+					Back_BTN.Enabled = Enabled;
+					Back_BTN.BackColor = System.Drawing.Color.Salmon;
+				}
+				else
+				{
+					Back_BTN.Enabled = false;
+					Back_BTN.BackColor = System.Drawing.Color.Gray;
+				}
 
 				NumberOfQ_LBL.Text = $"Question {RowNumber + 1}:";
-				Questions_LBL.Text = Questions.qustions[RowNumber];
+				Questions_LBL.Text = Questions.questions[RowNumber];
 
 				if (RowNumber == 9)
 				{
@@ -73,7 +93,7 @@ namespace TenQuizQuestions
 						Back_BTN.Enabled = false;
 						Back_BTN.BackColor = System.Drawing.Color.Gray;
 
-						Questions_LBL.Text = Questions.qustions[RowNumber];
+						Questions_LBL.Text = Questions.questions[RowNumber];
 						NumberOfQ_LBL.Text = $"Question {RowNumber + 1}:";
 					}
 					else
@@ -94,16 +114,35 @@ namespace TenQuizQuestions
 		{
 			if (RowNumber > 0)
 			{
-				RowNumber--;
+				if (backCounter == 0)
+				{
+					RowNumber--;
 
-				Questions_LBL.Text = Questions.qustions[RowNumber];
-				NumberOfQ_LBL.Text = $"Question {RowNumber + 1}:";
-				True_RBTN.Checked = false;
-				False_RBTN.Checked = false;
+					Questions_LBL.Text = Questions.questions[RowNumber];
+					NumberOfQ_LBL.Text = $"Question {RowNumber + 1}:";
+					True_RBTN.Checked = false;
+					False_RBTN.Checked = false;
+
+					if (lastCorrectAnswer)
+					{
+						correctAnswers--;
+						CorrectAnswers_LBL.Text = correctAnswers.ToString();
+					}
+					else
+					{
+						incAnswers--;
+						InCorrectAnswers_LBL.Text = incAnswers.ToString();
+					}
+
+					backCounter++;
+				}
+				else
+				{
+					Back_BTN.Enabled = false;
+					Back_BTN.BackColor = System.Drawing.Color.Gray;
+					DialogResult result = MessageBox.Show("You Can Undo Answer Just Once", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				}
 			}
-
-			Back_BTN.Enabled = RowNumber > 0;
-			Back_BTN.BackColor = RowNumber > 0 ? System.Drawing.Color.Salmon : System.Drawing.Color.Gray;
 		}
 	}
 }

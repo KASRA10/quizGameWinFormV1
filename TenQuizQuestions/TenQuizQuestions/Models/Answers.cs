@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿// Ignore Spelling: qustions
+
+using System.Collections.Generic;
 
 namespace TenQuizQuestions.Models
 {
 	public static class Answers
 	{
-		public static List<string> qustions = new List<string>() {
+		public static List<string> answers = new List<string>() {
 			"False",
 			"True",
 			"True",

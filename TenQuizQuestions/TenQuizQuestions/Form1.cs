@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Ignore Spelling: FRM
+
+using System;
 using System.Windows.Forms;
 
 namespace TenQuizQuestions

@@ -36,10 +36,10 @@
 			this.True_RBTN = new System.Windows.Forms.RadioButton();
 			this.False_RBTN = new System.Windows.Forms.RadioButton();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.NumberTrueTitle_LBL = new System.Windows.Forms.Label();
-			this.CorrectAnswers_LBL = new System.Windows.Forms.Label();
-			this.InCorrectAnswersTitle_LBL = new System.Windows.Forms.Label();
 			this.InCorrectAnswers_LBL = new System.Windows.Forms.Label();
+			this.InCorrectAnswersTitle_LBL = new System.Windows.Forms.Label();
+			this.CorrectAnswers_LBL = new System.Windows.Forms.Label();
+			this.NumberTrueTitle_LBL = new System.Windows.Forms.Label();
 			this.Next_BTN = new System.Windows.Forms.Button();
 			this.Back_BTN = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.Icon_PIC)).BeginInit();
@@ -50,7 +50,7 @@
 			// Icon_PIC
 			// 
 			this.Icon_PIC.Image = global::TenQuizQuestions.Properties.Resources.icons8_Ask_Question_68px;
-			this.Icon_PIC.Location = new System.Drawing.Point(337, 14);
+			this.Icon_PIC.Location = new System.Drawing.Point(173, 14);
 			this.Icon_PIC.Name = "Icon_PIC";
 			this.Icon_PIC.Size = new System.Drawing.Size(67, 65);
 			this.Icon_PIC.TabIndex = 0;
@@ -62,14 +62,14 @@
 			this.Title_PNL.Controls.Add(this.Icon_PIC);
 			this.Title_PNL.Location = new System.Drawing.Point(13, 13);
 			this.Title_PNL.Name = "Title_PNL";
-			this.Title_PNL.Size = new System.Drawing.Size(759, 94);
+			this.Title_PNL.Size = new System.Drawing.Size(417, 94);
 			this.Title_PNL.TabIndex = 1;
 			// 
 			// NumberOfQ_LBL
 			// 
 			this.NumberOfQ_LBL.AutoSize = true;
 			this.NumberOfQ_LBL.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-			this.NumberOfQ_LBL.Location = new System.Drawing.Point(182, 162);
+			this.NumberOfQ_LBL.Location = new System.Drawing.Point(12, 110);
 			this.NumberOfQ_LBL.Name = "NumberOfQ_LBL";
 			this.NumberOfQ_LBL.Size = new System.Drawing.Size(89, 19);
 			this.NumberOfQ_LBL.TabIndex = 2;
@@ -79,7 +79,7 @@
 			// 
 			this.Questions_LBL.AutoSize = true;
 			this.Questions_LBL.BackColor = System.Drawing.Color.White;
-			this.Questions_LBL.Location = new System.Drawing.Point(182, 191);
+			this.Questions_LBL.Location = new System.Drawing.Point(13, 138);
 			this.Questions_LBL.Name = "Questions_LBL";
 			this.Questions_LBL.Size = new System.Drawing.Size(121, 19);
 			this.Questions_LBL.TabIndex = 3;
@@ -88,26 +88,30 @@
 			// True_RBTN
 			// 
 			this.True_RBTN.AutoSize = true;
+			this.True_RBTN.BackColor = System.Drawing.Color.DarkSeaGreen;
+			this.True_RBTN.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.True_RBTN.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-			this.True_RBTN.Location = new System.Drawing.Point(186, 234);
+			this.True_RBTN.Location = new System.Drawing.Point(14, 214);
 			this.True_RBTN.Name = "True_RBTN";
 			this.True_RBTN.Size = new System.Drawing.Size(59, 23);
 			this.True_RBTN.TabIndex = 4;
 			this.True_RBTN.TabStop = true;
 			this.True_RBTN.Text = "True";
-			this.True_RBTN.UseVisualStyleBackColor = true;
+			this.True_RBTN.UseVisualStyleBackColor = false;
 			// 
 			// False_RBTN
 			// 
 			this.False_RBTN.AutoSize = true;
+			this.False_RBTN.BackColor = System.Drawing.Color.LightSalmon;
+			this.False_RBTN.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.False_RBTN.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-			this.False_RBTN.Location = new System.Drawing.Point(251, 234);
+			this.False_RBTN.Location = new System.Drawing.Point(79, 214);
 			this.False_RBTN.Name = "False_RBTN";
 			this.False_RBTN.Size = new System.Drawing.Size(62, 23);
 			this.False_RBTN.TabIndex = 5;
 			this.False_RBTN.TabStop = true;
 			this.False_RBTN.Text = "False";
-			this.False_RBTN.UseVisualStyleBackColor = true;
+			this.False_RBTN.UseVisualStyleBackColor = false;
 			// 
 			// panel2
 			// 
@@ -116,54 +120,54 @@
 			this.panel2.Controls.Add(this.InCorrectAnswersTitle_LBL);
 			this.panel2.Controls.Add(this.CorrectAnswers_LBL);
 			this.panel2.Controls.Add(this.NumberTrueTitle_LBL);
-			this.panel2.Location = new System.Drawing.Point(181, 263);
+			this.panel2.Location = new System.Drawing.Point(12, 243);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(236, 92);
+			this.panel2.Size = new System.Drawing.Size(418, 71);
 			this.panel2.TabIndex = 6;
-			// 
-			// NumberTrueTitle_LBL
-			// 
-			this.NumberTrueTitle_LBL.AutoSize = true;
-			this.NumberTrueTitle_LBL.Location = new System.Drawing.Point(38, 22);
-			this.NumberTrueTitle_LBL.Name = "NumberTrueTitle_LBL";
-			this.NumberTrueTitle_LBL.Size = new System.Drawing.Size(118, 19);
-			this.NumberTrueTitle_LBL.TabIndex = 0;
-			this.NumberTrueTitle_LBL.Text = "Correct Answers:";
-			// 
-			// CorrectAnswers_LBL
-			// 
-			this.CorrectAnswers_LBL.AutoSize = true;
-			this.CorrectAnswers_LBL.Location = new System.Drawing.Point(174, 22);
-			this.CorrectAnswers_LBL.Name = "CorrectAnswers_LBL";
-			this.CorrectAnswers_LBL.Size = new System.Drawing.Size(17, 19);
-			this.CorrectAnswers_LBL.TabIndex = 1;
-			this.CorrectAnswers_LBL.Text = "0";
-			// 
-			// InCorrectAnswersTitle_LBL
-			// 
-			this.InCorrectAnswersTitle_LBL.AutoSize = true;
-			this.InCorrectAnswersTitle_LBL.Location = new System.Drawing.Point(38, 50);
-			this.InCorrectAnswersTitle_LBL.Name = "InCorrectAnswersTitle_LBL";
-			this.InCorrectAnswersTitle_LBL.Size = new System.Drawing.Size(130, 19);
-			this.InCorrectAnswersTitle_LBL.TabIndex = 2;
-			this.InCorrectAnswersTitle_LBL.Text = "InCorrect Answers:";
 			// 
 			// InCorrectAnswers_LBL
 			// 
 			this.InCorrectAnswers_LBL.AutoSize = true;
-			this.InCorrectAnswers_LBL.Location = new System.Drawing.Point(174, 50);
+			this.InCorrectAnswers_LBL.Location = new System.Drawing.Point(269, 42);
 			this.InCorrectAnswers_LBL.Name = "InCorrectAnswers_LBL";
 			this.InCorrectAnswers_LBL.Size = new System.Drawing.Size(17, 19);
 			this.InCorrectAnswers_LBL.TabIndex = 3;
 			this.InCorrectAnswers_LBL.Text = "0";
 			// 
+			// InCorrectAnswersTitle_LBL
+			// 
+			this.InCorrectAnswersTitle_LBL.AutoSize = true;
+			this.InCorrectAnswersTitle_LBL.Location = new System.Drawing.Point(133, 42);
+			this.InCorrectAnswersTitle_LBL.Name = "InCorrectAnswersTitle_LBL";
+			this.InCorrectAnswersTitle_LBL.Size = new System.Drawing.Size(130, 19);
+			this.InCorrectAnswersTitle_LBL.TabIndex = 2;
+			this.InCorrectAnswersTitle_LBL.Text = "InCorrect Answers:";
+			// 
+			// CorrectAnswers_LBL
+			// 
+			this.CorrectAnswers_LBL.AutoSize = true;
+			this.CorrectAnswers_LBL.Location = new System.Drawing.Point(269, 14);
+			this.CorrectAnswers_LBL.Name = "CorrectAnswers_LBL";
+			this.CorrectAnswers_LBL.Size = new System.Drawing.Size(17, 19);
+			this.CorrectAnswers_LBL.TabIndex = 1;
+			this.CorrectAnswers_LBL.Text = "0";
+			// 
+			// NumberTrueTitle_LBL
+			// 
+			this.NumberTrueTitle_LBL.AutoSize = true;
+			this.NumberTrueTitle_LBL.Location = new System.Drawing.Point(133, 14);
+			this.NumberTrueTitle_LBL.Name = "NumberTrueTitle_LBL";
+			this.NumberTrueTitle_LBL.Size = new System.Drawing.Size(118, 19);
+			this.NumberTrueTitle_LBL.TabIndex = 0;
+			this.NumberTrueTitle_LBL.Text = "Correct Answers:";
+			// 
 			// Next_BTN
 			// 
 			this.Next_BTN.BackColor = System.Drawing.Color.CornflowerBlue;
 			this.Next_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.Next_BTN.Location = new System.Drawing.Point(309, 374);
+			this.Next_BTN.Location = new System.Drawing.Point(280, 320);
 			this.Next_BTN.Name = "Next_BTN";
-			this.Next_BTN.Size = new System.Drawing.Size(108, 31);
+			this.Next_BTN.Size = new System.Drawing.Size(136, 31);
 			this.Next_BTN.TabIndex = 7;
 			this.Next_BTN.Text = "Next >";
 			this.Next_BTN.UseVisualStyleBackColor = false;
@@ -173,9 +177,9 @@
 			// 
 			this.Back_BTN.BackColor = System.Drawing.Color.Salmon;
 			this.Back_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.Back_BTN.Location = new System.Drawing.Point(181, 374);
+			this.Back_BTN.Location = new System.Drawing.Point(16, 320);
 			this.Back_BTN.Name = "Back_BTN";
-			this.Back_BTN.Size = new System.Drawing.Size(108, 31);
+			this.Back_BTN.Size = new System.Drawing.Size(125, 31);
 			this.Back_BTN.TabIndex = 8;
 			this.Back_BTN.Text = "< Back";
 			this.Back_BTN.UseVisualStyleBackColor = false;
@@ -186,7 +190,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Silver;
-			this.ClientSize = new System.Drawing.Size(784, 440);
+			this.ClientSize = new System.Drawing.Size(442, 356);
 			this.Controls.Add(this.Back_BTN);
 			this.Controls.Add(this.Next_BTN);
 			this.Controls.Add(this.panel2);
